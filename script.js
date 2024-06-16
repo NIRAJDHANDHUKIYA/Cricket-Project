@@ -56,7 +56,7 @@ function addExtraBall(type) {
       // Update current score only for extras
     //  currentScore += 1;
    // }
-    ballsContainer.appendChild(ball);
+ //   ballsContainer.appendChild(ball);
 
     // Update the current team's score immediately
     updateTeamScore();
