@@ -1,4 +1,3 @@
-
 let ballCount = 0;
 let currentOverScore = 0;
 let currentScore = 0;
@@ -50,10 +49,10 @@ function addExtraBall(type) {
     const ballsContainer = document.getElementById("balls-container");
     const ball = document.createElement("div");
     ball.classList.add("ball");
-   if (type === "wide" || type === "no") {
-     ball.innerText = type === "wide" ? "WD1" : "NB1";
-     currentOverScore += 1;
-       Update current score only for extras
+    if (type === "wide" || type === "no") {
+      ball.innerText = type === "wide" ? "WD1" : "NB1";
+      currentOverScore += 1;
+      // Update current score only for extras
       currentScore += 1;
     }
     ballsContainer.appendChild(ball);
@@ -247,3 +246,4 @@ function checkWinner() {
     }
   }
 }
+    
